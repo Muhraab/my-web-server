@@ -5,3 +5,10 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+
+img {
+    width: 300px; /* Change the width to the desired size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the image a block element */
+    margin: 20px auto; /* Center the image horizontally */
+}
