@@ -3,12 +3,12 @@ body {
     background-color: blue;
     color: white;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 50;
 }
 
 img {
-    width: 300px; /* Change the width to the desired size */
+    width: 300; /* Change the width to the desired size */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Make the image a block element */
-    margin: 20px auto; /* Center the image horizontally */
+    margin: 20 auto; /* Center the image horizontally */
 }
