@@ -7,7 +7,7 @@ body {
 }
 
 img {
-    width: 300; /* Change the width to the desired size */
+    width: 330; /* Change the width to the desired size */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Make the image a block element */
     margin: 20 auto; /* Center the image horizontally */
