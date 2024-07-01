@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Risom Lund</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Hej Maria og Gustav og Alfred</h1>
@@ -16,9 +36,17 @@
     <img src="Malthe_Taiwan.jpg" alt="Malthe" width="400" style="display: block; margin: 0 auto; height: auto;">
 
 
+    <button id="randomButton">Hvem skal tage opvasken i dag?</button>
+    <div id="result"></div>
 
-
-    
-
+    <script>
+        // JavaScript Code
+        document.getElementById('randomButton').addEventListener('click', function() {
+            const people = ['Malthe', 'Maria', 'Alfred', 'Gustav'];
+            const randomIndex = Math.floor(Math.random() * people.length);
+            const chosenPerson = people[randomIndex];
+            document.getElementById('result').textContent = chosenPerson;
+        });
+    </script>
 </body>
 </html>
